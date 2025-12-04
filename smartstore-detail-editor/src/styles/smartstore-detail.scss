@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+/* 스마트스토어 상세페이지용 클래스들 (sd-*) */
+
+.sd-root {
+  background: #ffffff;
+  border-radius: $radius-lg;
+  border: 1px solid $color-border;
+  padding: 24px 16px;
+  color: $color-text-main;
+}
+
+.sd-hero {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.sd-hero-kicker {
+  font-size: 11px;
+  color: $color-text-muted;
+  margin: 0 0 4px;
+}
+
+.sd-hero-title {
+  margin: 0 0 8px;
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+.sd-hero-subtitle {
+  margin: 0 0 12px;
+  font-size: 15px;
+  color: $color-text-sub;
+}
+
+.sd-hero-target {
+  margin: 0;
+  font-size: 13px;
+  color: $color-text-muted;
+}
+
+.sd-section {
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid $color-border;
+}
+
+.sd-section-title {
+  margin: 0 0 8px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.sd-section-subtitle {
+  margin: 0 0 8px;
+  font-size: 13px;
+  color: $color-text-sub;
+
+  &--mt {
+    margin-top: 12px;
+  }
+}
+
+.sd-list {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 13px;
+  color: $color-text-main;
+
+  li {
+    margin-bottom: 4px;
+  }
+}
+
+.sd-list-disc {
+  list-style-type: disc;
+}
+
+.sd-list-plain {
+  list-style-type: none;
+  padding-left: 0;
+
+  &--mt {
+    margin-top: 6px;
+  }
+}
+
+.sd-list-ordered {
+  list-style-type: decimal;
+  padding-left: 18px;
+
+  li {
+    margin-bottom: 6px;
+  }
+}
+
+.sd-step-label {
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.sd-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sd-faq-item {
+  padding: 10px 12px;
+  border-radius: $radius-md;
+  background: $color-primary-soft;
+}
+
+.sd-faq-question {
+  margin: 0 0 4px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.sd-faq-answer {
+  margin: 0;
+  font-size: 13px;
+  color: $color-text-main;
+}
+
+.sd-section--policy {
+  font-size: 12px;
+  color: $color-text-muted;
+}
+
+.sd-policy-block {
+  margin-bottom: 10px;
+}
+
+.sd-policy-title {
+  margin: 0 0 4px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.sd-policy-text {
+  margin: 0;
+  white-space: pre-line;
+}

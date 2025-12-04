@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+.editor-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.4fr);
+  gap: 24px;
+
+  @media (max-width: 960px) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.editor-panel {
+  background: $color-panel-bg;
+  border-radius: $radius-lg;
+  border: 1px solid $color-border;
+  padding: 16px 16px 18px;
+  box-shadow: $shadow-soft;
+
+  &--form {
+    max-height: calc(100vh - 120px);
+    overflow: auto;
+  }
+}
+
+.editor-panel__title {
+  margin: 0 0 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.editor-field-group {
+  margin-bottom: 12px;
+}
+
+.editor-label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: $color-text-sub;
+}
+
+.editor-input,
+.editor-textarea,
+.editor-select {
+  width: 100%;
+  font-size: 13px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid $color-border;
+  outline: none;
+  background: #ffffff;
+
+  &:focus {
+    border-color: $color-primary;
+    box-shadow: 0 0 0 1px rgba($color-primary, 0.08);
+  }
+}
+
+.editor-textarea {
+  min-height: 60px;
+  resize: vertical;
+}
+
+.editor-select {
+  height: 34px;
+}
+
+.editor-actions {
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.editor-button {
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  background: $color-primary;
+  color: #ffffff;
+  transition: background 0.15s ease, box-shadow 0.15s ease;
+
+  &:hover {
+    background: darken($color-primary, 3%);
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+  }
+
+  &:active {
+    transform: translateY(1px);
+    box-shadow: none;
+  }
+}
