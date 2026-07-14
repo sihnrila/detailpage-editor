@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Build
-        run: cd smartstore-detail-editor && npm ci && npm run build
+        run: cd smartstore-detail-editor && npm install && npm run build
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
